@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
+
 struct LumoCodeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IGProductionsSplashScreen()
+                .preferredColorScheme(nil) // Respektiert System-Einstellungen
         }
     }
 }
