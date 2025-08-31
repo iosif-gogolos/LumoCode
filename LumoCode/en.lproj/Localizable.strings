@@ -1,0 +1,66 @@
+// Localizable.strings (English - en)
+
+// Welcome Screen
+"welcome_to" = "Welcome to";
+"app_name" = "LumoCode";
+"app_description" = "Learn Swift playfully with Lumo the clever fox!";
+"your_name" = "Your Name";
+"lets_go" = "Let's Go!";
+
+// Category Selection
+"hello_user" = "Hello %your_name! 👋";
+"choose_category" = "Choose a category";
+"questions_count" = "%d Questions";
+
+// Categories
+"swift_basics" = "Swift Basics";
+"functions" = "Functions";
+"loops" = "Loops";
+
+// Quiz
+"correct" = "✅ Correct!";
+"wrong" = "❌ Unfortunately wrong!";
+"explanation" = "Explanation:";
+"continue" = "Continue";
+"points" = "Points: %d";
+"streak" = "Streak: %d";
+
+// Summary
+"quiz_completed" = "🎉 Quiz completed!";
+"total_points" = "Total Points";
+"accuracy" = "Accuracy";
+"best_streak" = "Best Streak";
+"excellent" = "Excellent! 🌟";
+"excellent_message" = "You really master Swift well!";
+"good_job" = "Good job! 👍";
+"good_job_message" = "You're on the right track!";
+"practice_makes_perfect" = "Practice makes perfect! 💪";
+"practice_message" = "Try again - you can do it!";
+"try_again" = "Try Again";
+"other_category" = "Other Category";
+
+// Questions - Swift Basics
+"q_variable_declaration" = "Which keyword is used to declare a variable?";
+"e_variable_declaration" = "'var' is used to declare mutable variables in Swift.";
+"q_constant_creation" = "How do you create a constant in Swift?";
+"e_constant_creation" = "The keyword 'let' creates immutable constants.";
+"q_integer_type" = "Which data type is used for integers?";
+"e_integer_type" = "Int is the standard data type for integers in Swift.";
+
+// Questions - Functions
+"q_function_definition" = "How do you define a function in Swift?";
+"e_function_definition" = "Functions are defined with the keyword 'func'.";
+"q_function_return" = "How does a function return a value?";
+"e_function_return" = "The keyword 'return' returns a value from the function.";
+
+// Questions - Loops
+"q_for_in_loop" = "Which loop repeats code for each element?";
+"e_for_in_loop" = "For-in loops iterate over collections of elements.";
+"q_repeat_while" = "Which loop executes code at least once?";
+"e_repeat_while" = "Repeat-while loops execute code at least once.";
+
+
+
+
+
+

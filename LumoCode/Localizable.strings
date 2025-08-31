@@ -1,0 +1,67 @@
+//
+//  Localizable.strings
+//  LumoCode
+//
+//  Created by Iosif Gogolos on 31.08.25.
+//
+// Localizable.strings (German - de)
+
+// Welcome Screen
+"welcome_to" = "Willkommen bei";
+"app_name" = "LumoCode";
+"app_description" = "Lerne Swift spielerisch mit Lumo dem schlauen Fuchs!";
+"your_name" = "Dein Name";
+"lets_go" = "Los geht's!";
+
+// Category Selection
+"hello_user" = "Hallo %@! 👋";
+"choose_category" = "Wähle eine Kategorie";
+"questions_count" = "%d Fragen";
+
+// Categories
+"swift_basics" = "Swift Grundlagen";
+"functions" = "Funktionen";
+"loops" = "Schleifen";
+
+// Quiz
+"correct" = "✅ Richtig!";
+"wrong" = "❌ Leider falsch!";
+"explanation" = "Erklärung:";
+"continue" = "Weiter";
+"points" = "Punkte: %d";
+"streak" = "Streak: %d";
+
+// Summary
+"quiz_completed" = "🎉 Quiz beendet!";
+"total_points" = "Gesamtpunkte";
+"accuracy" = "Genauigkeit";
+"best_streak" = "Beste Streak";
+"excellent" = "Ausgezeichnet! 🌟";
+"excellent_message" = "Du beherrschst Swift wirklich gut!";
+"good_job" = "Gut gemacht! 👍";
+"good_job_message" = "Du bist auf dem richtigen Weg!";
+"practice_makes_perfect" = "Übung macht den Meister! 💪";
+"practice_message" = "Probiere es nochmal - du schaffst das!";
+"try_again" = "Nochmal versuchen";
+"other_category" = "Andere Kategorie";
+
+// Questions - Swift Basics
+"q_variable_declaration" = "Welches Schlüsselwort wird verwendet, um eine Variable zu deklarieren?";
+"e_variable_declaration" = "Mit 'var' deklariert man veränderbare Variablen in Swift.";
+"q_constant_creation" = "Wie erstellt man eine Konstante in Swift?";
+"e_constant_creation" = "Das Schlüsselwort 'let' erstellt unveränderbare Konstanten.";
+"q_integer_type" = "Welcher Datentyp wird für ganze Zahlen verwendet?";
+"e_integer_type" = "Int ist der Standard-Datentyp für ganze Zahlen in Swift.";
+
+// Questions - Functions
+"q_function_definition" = "Wie definiert man eine Funktion in Swift?";
+"e_function_definition" = "Funktionen werden mit dem Schlüsselwort 'func' definiert.";
+"q_function_return" = "Wie gibt eine Funktion einen Wert zurück?";
+"e_function_return" = "Das Schlüsselwort 'return' gibt einen Wert aus der Funktion zurück.";
+
+// Questions - Loops
+"q_for_in_loop" = "Welche Schleife wiederholt Code für jedes Element?";
+"e_for_in_loop" = "For-in Schleifen iterieren über Sammlungen von Elementen.";
+"q_repeat_while" = "Welche Schleife führt Code mindestens einmal aus?";
+"e_repeat_while" = "Repeat-while Schleifen führen den Code mindestens einmal aus.";
+
