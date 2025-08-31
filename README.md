@@ -45,7 +45,7 @@ Punkte, Genauigkeit, beste Streak, Buttons zum Wiederholen oder Kategoriewechsel
 ## Installation
 1. Repository von GitHub klonen:  
    ```bash
-   git clone [<REPOSITORY-URL>](https://github.com/iosif-gogolos/LumoCode/)
+   git clone https://github.com/iosif-gogolos/LumoCode/
    ```
 2. Projekt in Xcode 16 öffnen
 
