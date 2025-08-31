@@ -27,9 +27,9 @@ Lumo-Maskottchen, Eingabefeld für Namen, „Los geht’s!“-Button.
 ![Quiz-Ansicht](screenshots/quiz.png)  
 Fortschrittsbalken, Frage im Zentrum, drei Antwortoptionen als Buttons.
 
-### Feedback-Zustand
-![Feedback-Zustand](screenshots/result.png)  
-Farbige Markierung der Antwort, Lumo-Animation, Erklärungstext.
+### Ergebnis-Zustand
+![Ergebnis-Zustand](screenshots/results.png)  
+Punkte, Genauigkeit, beste Streak, Buttons zum Wiederholen oder Kategoriewechsel.
 
 ---
 
