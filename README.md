@@ -31,10 +31,6 @@ Fortschrittsbalken, Frage im Zentrum, drei Antwortoptionen als Buttons.
 ![Feedback-Zustand](screenshots/feedback.png)  
 Farbige Markierung der Antwort, Lumo-Animation, Erklärungstext.
 
-### Ergebnis-Screen
-![Ergebnis-Screen](screenshots/results.png)  
-Punkte, Genauigkeit, beste Streak, Buttons zum Wiederholen oder Kategoriewechsel.
-
 ---
 
 ## Bedienungsbeispiel (Use Case)
