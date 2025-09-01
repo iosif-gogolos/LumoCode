@@ -65,3 +65,185 @@
 "q_repeat_while" = "Welche Schleife führt Code mindestens einmal aus?";
 "e_repeat_while" = "Repeat-while Schleifen führen den Code mindestens einmal aus.";
 
+// Neue Kategorien
+"oop_basics" = "Objektorientierung";
+"error_handling" = "Fehlerbehandlung";
+"swiftui_basics" = "SwiftUI Grundlagen";
+
+// Swift Grundlagen - Erweiterte Fragen
+"q_string_interpolation" = "Wie fügt man Variablen in Strings ein?";
+"e_string_interpolation" = "String-Interpolation verwendet \\() um Variablen in Strings einzufügen.";
+
+"q_optional_syntax" = "Wie deklariert man einen Optional in Swift?";
+"e_optional_syntax" = "Ein Fragezeichen (?) nach dem Typ macht eine Variable optional.";
+
+"q_nil_check" = "Wie prüft man auf einen leeren Optional-Wert?";
+"e_nil_check" = "nil ist der leere Wert für Optionals in Swift.";
+
+"q_force_unwrap" = "Wie erzwingt man das Entpacken eines Optionals?";
+"e_force_unwrap" = "Das Ausrufezeichen (!) erzwingt das Entpacken, kann aber crashen wenn nil.";
+
+"q_type_inference" = "Was ist Type Inference in Swift?";
+"e_type_inference" = "Swift kann Datentypen automatisch aus dem Kontext ableiten.";
+
+"q_array_declaration" = "Wie deklariert man ein Array in Swift?";
+"e_array_declaration" = "Sowohl [Int]() als auch Array<Int> sind gültige Array-Deklarationen.";
+
+"q_dictionary_syntax" = "Wie ist die Syntax für Dictionaries?";
+"e_dictionary_syntax" = "Dictionaries verwenden [Key: Value] Syntax.";
+
+"q_tuple_syntax" = "Wie erstellt man ein Tuple?";
+"e_tuple_syntax" = "Tuples verwenden Klammern: (Type1, Type2).";
+
+"q_enum_definition" = "Wie definiert man ein Enum?";
+"e_enum_definition" = "Enums werden mit 'enum Name { case value }' definiert.";
+
+"q_struct_vs_class" = "Was ist der Hauptunterschied zwischen Struct und Class?";
+"e_struct_vs_class" = "Structs sind Werttypen (kopiert), Classes sind Referenztypen (referenziert).";
+
+"q_computed_property" = "Wie definiert man eine Computed Property?";
+"e_computed_property" = "Computed Properties haben einen get-Block und optional einen set-Block.";
+
+"q_guard_statement" = "Wofür verwendet man guard statements?";
+"e_guard_statement" = "Guard statements ermöglichen frühe Rückkehr und verbessern die Lesbarkeit.";
+
+// Funktionen - Erweiterte Fragen
+"q_function_parameters" = "Wie definiert man Parameter in Funktionen?";
+"e_function_parameters" = "Parameter haben ein Label und einen Typ: (name: String).";
+
+"q_function_return_type" = "Wie gibt man den Rückgabetyp an?";
+"e_function_return_type" = "Der Pfeil (->) zeigt den Rückgabetyp an.";
+
+"q_external_parameter" = "Wie erstellt man externe Parameter-Labels?";
+"e_external_parameter" = "Externes Label vor internem: func greet(to name: String).";
+
+"q_default_parameter" = "Wie setzt man Default-Werte für Parameter?";
+"e_default_parameter" = "Default-Werte werden mit = gesetzt.";
+
+"q_variadic_parameter" = "Wie akzeptiert eine Funktion mehrere Werte?";
+"e_variadic_parameter" = "Drei Punkte (...) nach dem Typ erlauben mehrere Werte.";
+
+"q_inout_parameter" = "Wie übergibt man Parameter by reference?";
+"e_inout_parameter" = "inout Parameter ermöglichen Änderungen der ursprünglichen Variable.";
+
+"q_closure_syntax" = "Wie ist die Syntax für Closures?";
+"e_closure_syntax" = "Closures verwenden geschweifte Klammern mit 'in' Keyword.";
+
+"q_trailing_closure" = "Was sind Trailing Closures?";
+"e_trailing_closure" = "Wenn der letzte Parameter ein Closure ist, kann es nach den Klammern stehen.";
+
+"q_higher_order_function" = "Welche Higher-Order Functions gibt es in Swift?";
+"e_higher_order_function" = "map, filter, reduce sind die wichtigsten Higher-Order Functions.";
+
+"q_escaping_closure" = "Wann braucht man @escaping bei Closures?";
+"e_escaping_closure" = "@escaping wird benötigt wenn das Closure nach der Funktion ausgeführt wird.";
+
+// Schleifen - Erweiterte Fragen
+"q_range_operator" = "Welcher Operator erstellt einen geschlossenen Bereich?";
+"e_range_operator" = "Drei Punkte (...) erstellen einen geschlossenen Bereich.";
+
+"q_half_open_range" = "Welcher Operator erstellt einen halboffenen Bereich?";
+"e_half_open_range" = "..<  erstellt einen Bereich der das Ende ausschließt.";
+
+"q_break_statement" = "Was macht das break Statement?";
+"e_break_statement" = "break beendet die aktuelle Schleife oder switch-Anweisung sofort.";
+
+"q_continue_statement" = "Was macht das continue Statement?";
+"e_continue_statement" = "continue überspringt den Rest der aktuellen Iteration.";
+
+"q_labeled_statement" = "Wie erstellt man benannte Schleifen?";
+"e_labeled_statement" = "Labels vor Schleifen ermöglichen gezieltes break/continue.";
+
+"q_where_clause" = "Wie fügt man Bedingungen zu Schleifen hinzu?";
+"e_where_clause" = "where-Klauseln filtern Iterationen basierend auf Bedingungen.";
+
+"q_switch_statement" = "Wie ist die Syntax für switch statements?";
+"e_switch_statement" = "switch nimmt einen Wert und prüft verschiedene cases.";
+
+"q_fallthrough_keyword" = "Wie führt man mehrere cases aus?";
+"e_fallthrough_keyword" = "fallthrough führt den nächsten case ebenfalls aus.";
+
+// Objektorientierung
+"q_class_definition" = "Wie definiert man eine Klasse?";
+"e_class_definition" = "Klassen werden mit dem 'class' Keyword definiert.";
+
+"q_inheritance_syntax" = "Wie erbt eine Klasse von einer anderen?";
+"e_inheritance_syntax" = "Doppelpunkt (:) zeigt Vererbung an.";
+
+"q_override_keyword" = "Wie überschreibt man Methoden?";
+"e_override_keyword" = "override Keyword ist erforderlich um Methoden zu überschreiben.";
+
+"q_initializer_syntax" = "Wie definiert man Initializer?";
+"e_initializer_syntax" = "init Keyword definiert Konstruktoren.";
+
+"q_designated_initializer" = "Was ist ein Designated Initializer?";
+"e_designated_initializer" = "Der Haupt-Initializer der alle Properties initialisiert.";
+
+"q_convenience_initializer" = "Was ist ein Convenience Initializer?";
+"e_convenience_initializer" = "convenience Initializer rufen andere Initializer auf.";
+
+"q_deinitializer" = "Wie definiert man Destruktoren?";
+"e_deinitializer" = "deinit wird aufgerufen wenn ein Objekt zerstört wird.";
+
+"q_access_control_private" = "Welches Keyword macht Properties privat?";
+"e_access_control_private" = "private beschränkt Zugriff auf die aktuelle Datei.";
+
+"q_access_control_public" = "Was ist der Unterschied zwischen public und open?";
+"e_access_control_public" = "public erlaubt Zugriff, open zusätzlich Vererbung außerhalb des Moduls.";
+
+"q_static_property" = "Wie erstellt man Class Properties?";
+"e_static_property" = "static und class erstellen Properties die zur Klasse gehören.";
+
+"q_weak_reference" = "Wie vermeidet man Retain Cycles?";
+"e_weak_reference" = "weak Referenzen verhindern starke Referenzzyklen.";
+
+"q_protocol_definition" = "Wie definiert man Protocols?";
+"e_protocol_definition" = "protocol Keyword definiert Schnittstellen.";
+
+// Fehlerbehandlung
+"q_error_protocol" = "Welches Protocol müssen Fehler implementieren?";
+"e_error_protocol" = "Error Protocol ist die Basis für alle Fehlertypen.";
+
+"q_throwing_function" = "Wie markiert man Funktionen die Fehler werfen?";
+"e_throwing_function" = "throws Keyword nach den Parametern.";
+
+"q_try_keyword" = "Wie ruft man Funktionen auf die Fehler werfen können?";
+"e_try_keyword" = "try Keyword vor dem Funktionsaufruf.";
+
+"q_do_catch_syntax" = "Wie fängt man Fehler ab?";
+"e_do_catch_syntax" = "do-catch Blöcke fangen und behandeln Fehler.";
+
+"q_try_optional" = "Wie macht man try optional?";
+"e_try_optional" = "try? gibt nil zurück wenn ein Fehler auftritt.";
+
+"q_try_force" = "Wie erzwingt man try ohne Fehlerbehandlung?";
+"e_try_force" = "try! crasht das Programm wenn ein Fehler auftritt.";
+
+"q_defer_statement" = "Wie führt man Cleanup-Code aus?";
+"e_defer_statement" = "defer führt Code aus bevor der Scope verlassen wird.";
+
+"q_result_type" = "Welcher Typ repräsentiert Erfolg oder Fehler?";
+"e_result_type" = "Result<Success, Failure> kapselt Erfolg oder Fehler.";
+
+// SwiftUI
+"q_view_protocol" = "Welches Protocol müssen SwiftUI Views implementieren?";
+"e_view_protocol" = "View Protocol definiert die body Property.";
+
+"q_body_property" = "Wie ist die Signatur der body Property?";
+"e_body_property" = "some View erlaubt opaque return types.";
+
+"q_state_property" = "Welches Property Wrapper verwaltet lokalen State?";
+"e_state_property" = "@State für lokale, veränderbare Daten.";
+
+"q_binding_property" = "Welches Property Wrapper verbindet Parent und Child Views?";
+"e_binding_property" = "@Binding ermöglicht bidirektionale Datenübertragung.";
+
+"q_observableobject" = "Wie observiert man externe Objekte?";
+"e_observableobject" = "@StateObject für Eigentum, @ObservedObject für Referenzen.";
+
+"q_vstack_hstack" = "Was ist der Unterschied zwischen VStack und HStack?";
+"e_vstack_hstack" = "VStack arrangiert vertikal, HStack horizontal.";
+
+"q_navigationview" = "Wie erstellt man Navigation in SwiftUI?";
+"e_navigationview" = "NavigationView (iOS 13+) oder NavigationStack (iOS 16+) ermöglicht hierarchische Navigation.";
+
