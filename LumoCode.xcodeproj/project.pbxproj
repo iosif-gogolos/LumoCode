@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		346E706F2E64D5610085DD8D /* Exceptions for "LumoCode" folder in "LumoCode" target */ = {
+		346E70B62E65ACD00085DD8D /* Exceptions for "LumoCode" folder in "LumoCode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		34FAD91C2E646F5000AED93D /* LumoCode */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				346E706F2E64D5610085DD8D /* Exceptions for "LumoCode" folder in "LumoCode" target */,
+				346E70B62E65ACD00085DD8D /* Exceptions for "LumoCode" folder in "LumoCode" target */,
 			);
 			path = LumoCode;
 			sourceTree = "<group>";

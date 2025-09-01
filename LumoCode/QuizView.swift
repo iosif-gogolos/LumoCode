@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation // für sound
 
 struct QuizView: View {
     @StateObject var quiz: QuizState
@@ -41,67 +42,78 @@ struct QuizView: View {
             }
             .padding()
             .background(Color(.systemBackground))
-            
-            ScrollView {
-                VStack(spacing: 30) {
-                    Image("LumoExplains")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: 150)
-                        .scaleEffect(lumoScale)
-                        .animation(.bouncy(duration: 0.5), value: lumoScale)
-                    
-                    Text(quiz.currentQuestion.text)
-                        .font(.title2)
-                        .bold()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal)
-                    
-                    VStack(spacing: 15) {
-                        ForEach(0..<quiz.currentQuestion.answers.count, id: \.self) { index in
-                            AnswerButton(
-                                text: quiz.currentQuestion.answers[index],
-                                isSelected: selectedAnswer == index,
-                                isCorrect: showFeedback && index == quiz.currentQuestion.correctAnswer,
-                                isWrong: showFeedback && selectedAnswer == index && index != quiz.currentQuestion.correctAnswer,
-                                isDisabled: showFeedback
-                            ) {
-                                if !showFeedback {
-                                    selectAnswer(index)
+            ZStack{
+                ScrollView {
+                    VStack(spacing: 30) {
+                        Image("LumoExplains")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 150)
+                            .scaleEffect(lumoScale)
+                            .animation(.bouncy(duration: 0.5), value: lumoScale)
+                        
+                        Text(quiz.currentQuestion.text)
+                            .font(.title2)
+                            .bold()
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        
+                        VStack(spacing: 15) {
+                            ForEach(0..<quiz.currentQuestion.answers.count, id: \.self) { index in
+                                AnswerButton(
+                                    text: quiz.currentQuestion.answers[index],
+                                    isSelected: selectedAnswer == index,
+                                    isCorrect: showFeedback && index == quiz.currentQuestion.correctAnswer,
+                                    isWrong: showFeedback && selectedAnswer == index && index != quiz.currentQuestion.correctAnswer,
+                                    isDisabled: showFeedback
+                                ) {
+                                    if !showFeedback {
+                                        selectAnswer(index)
+                                    }
                                 }
                             }
                         }
-                    }
-                    .padding(.horizontal)
-                    
-                    if showFeedback {
-                        VStack(spacing: 15) {
-                            Text(LocalizedStringKey(isCorrect ? "correct" : "wrong"))
-                                .font(.headline)
-                                .foregroundColor(isCorrect ? .green : .red)
-                            
-                            VStack(alignment: .leading, spacing: 10) {
-                                Text(LocalizedStringKey("explanation"))
+                        .padding(.horizontal)
+                        
+                        if showFeedback {
+                            VStack(spacing: 15) {
+                                Text(LocalizedStringKey(isCorrect ? "correct" : "wrong"))
                                     .font(.headline)
-                                Text(quiz.currentQuestion.explanation)
-                                    .font(.body)
+                                    .foregroundColor(isCorrect ? .green : .red)
+                                
+                                VStack(alignment: .leading, spacing: 10) {
+                                    Text(LocalizedStringKey("explanation"))
+                                        .font(.headline)
+                                    Text(quiz.currentQuestion.explanation)
+                                        .font(.body)
+                                }
+                                .padding()
+                                .background(Color(.systemGray6))
+                                .cornerRadius(12)
+                                .padding(.horizontal)
                             }
-                            .padding()
-                            .background(Color(.systemGray6))
-                            .cornerRadius(12)
-                            .padding(.horizontal)
-                            
-                            Button(LocalizedStringKey("continue")) {
-                                nextQuestion()
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .tint(.orange)
+                            .transition(.opacity.combined(with: .slide))
+                            .padding(.bottom, 80) // Platz für den Button reservieren
                         }
-                        .transition(.opacity.combined(with: .slide))
+                        
+                        Spacer(minLength: 50)
                     }
-                    
-                    Spacer(minLength: 50)
                 }
+                
+                // 👉 Fixierter Button am unteren Rand
+                if showFeedback {
+                    VStack {
+                        Spacer()
+                        Button(LocalizedStringKey("continue")) {
+                            nextQuestion()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(.orange)
+                        .padding()
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                    }
+                }
+                
             }
             
             // Score Display
@@ -129,13 +141,25 @@ struct QuizView: View {
         }
     }
     
+    
+    
     private func selectAnswer(_ index: Int) {
         selectedAnswer = index
         isCorrect = quiz.checkAnswer(index)
         
+        // Haptik + Ton
+        let generator = UINotificationFeedbackGenerator()
+        if isCorrect {
+            generator.notificationOccurred(.success)
+            AudioServicesPlaySystemSound(1025) // "Tock" sound
+        } else {
+            generator.notificationOccurred(.error)
+            AudioServicesPlaySystemSound(1006) // "Buzzer" sound
+        }
+        
         withAnimation(.bouncy) {
             showFeedback = true
-            lumoScale = isCorrect ? 1.3 : 0.8
+            lumoScale = isCorrect ? 1.0 : 0.9
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
